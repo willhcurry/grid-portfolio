@@ -1,0 +1,32 @@
+.story {
+    &__pictures {
+        background-color: $color-primary;
+        grid-column: col-start 5 / full-end;
+    }
+
+    &__content {
+        background-color: $color-grey-dark-1;
+        grid-column: full-start / col-end 4;
+
+        padding: 6rem 8vw;
+        
+        /* Flexbox Method
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        */
+
+        //CSS Grid method
+        display: grid;
+        align-content: center;
+        justify-items: start;
+    }
+
+    &__text {
+        color: $color-white;
+        font-size: 1.5rem;
+        font-style: italic;
+        margin-bottom: 4rem;
+    }
+}

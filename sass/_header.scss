@@ -1,0 +1,61 @@
+.header {
+    background-color: $color-grey-dark-1;
+    grid-column: full-start / col-end 7;
+
+
+    background-image: linear-gradient(rgba($color-grey-dark-1, .63), rgba($color-grey-dark-1, .63)),
+        url(../img/rwd.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 8rem;
+    padding-top: 4rem;
+    
+    display: grid;
+    grid-template-rows: 1fr min-content 6rem 1fr;
+    grid-template-columns: max-content;
+    grid-row-gap: 1.5rem;
+    justify-content: center;
+
+    &__logo {
+        height: 10rem;
+        justify-self: center;
+    }
+
+    &__btn {
+        align-self: start;
+        justify-self: center;
+
+    }
+
+    &__tech-text {
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        grid-column-gap: 1.5rem;
+        align-items: center;
+        font-size: 1.6rem;
+        color: $color-white;
+
+        &::before,
+        &::after {
+            content: "";
+            height: 1px;
+            display: block;
+            background-color: currentColor;
+
+        }
+    }
+
+    &__tech-logos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 20rem;
+        justify-items: center;
+
+    }
+
+    &__icon {
+        fill: $color-white;
+        width: 3rem;
+        height: 3rem;
+    }
+}

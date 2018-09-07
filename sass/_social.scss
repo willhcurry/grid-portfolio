@@ -1,0 +1,24 @@
+.social {
+    background-color: $color-secondary;
+    grid-column: col-start 8 / full-end;
+    padding: 3rem;
+
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    grid-row-gap: 2rem;
+
+    &__list {
+        display: grid;
+        grid-template-columns: min-content max-content;
+        grid-column-gap: 2rem;
+        grid-row-gap: 1vh;
+        align-items: center;
+    }
+
+    &__icon {
+        fill: $color-grey-light-2;
+        width: 3rem;
+    }
+}

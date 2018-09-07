@@ -1,0 +1,72 @@
+%heading {
+    font-weight: 400;
+}
+
+.heading-1 {
+    @extend %heading;
+    font-family: $font-display;
+    font-size: 4.5rem;
+    color: $color-grey-light-1;
+    line-height: 1;
+    justify-self: center;
+}
+
+.heading-2 {
+    @extend %heading;
+    font-size: 4rem;
+    font-style: italic;
+    line-height: italic;
+
+    &--white { color: $color-white; }
+    &--light { color: $color-grey-light-1; }
+    &--dark { color: $color-grey-dark-1; }
+}
+
+.heading-3 {
+    @extend %heading;
+    font-size: 1.6rem;
+    color: $color-primary;
+    justify-self: center;
+
+}
+
+.heading-4 {
+    @extend %heading;
+    font-size: 1.9rem;
+
+    &--light { color: $color-grey-light-1; }
+    &--dark { color: $color-grey-dark-1; }
+}
+
+.btn {
+    background-color: $color-primary;
+    color:#fff;
+    border: none;
+    border-radius: $font-primary;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 1.8rem 3rem;
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover {
+        background-color: $color-primary-dark;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.mb-sm {
+    margin-bottom: 2rem;
+}
+.mb-md {
+    margin-bottom: 3rem;
+}
+.mb-lg {
+    margin-bottom: 4rem;
+}
+.mb-xl {
+    margin-bottom: 8rem;
+}
