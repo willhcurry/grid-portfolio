@@ -4,24 +4,68 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i|Allura " rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         
-        <title></title>
+        <title>Curry D&D</title>
     </head>
-    <body class="container">
-        <div class="sidebar">
-            <button class="nav-btn"></button>
-        </div>
 
-        <header class="header">
+    <body class="container">
+
+
+
+        <!-- SideBar -->
+        <!-- <div class="sidebar">
+            <div class="navigation">
+                <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+                <label for="navi-toggle" class="navigation__button">
+                    <span class="navigation__icon">&nbsp;</span>
+                </label>
+
+                <div class="navigation__background">&nbsp;</div>
+
+                <nav class="navigation__nav">
+                    <ul class="navigation__list">
+                        <li class="navigation__item"><a onclick="uncheck()" href="#" class="navigation__link">Home</a></li>
+                        <li class="navigation__item"><a onclick="uncheck()" href="#skills" class="navigation__link">Skills</a></li>
+                        <li class="navigation__item"><a onclick="uncheck()" href="#testimonials" class="navigation__link">Testimonials</a></li>
+                        <li class="navigation__item"><a onclick="uncheck()" href="#apps" class="navigation__link">My Apps</a></li>
+                        <li class="navigation__item"><a onclick="uncheck()" href="#subscribe" class="navigation__link">Subscribe</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div> -->
+
+        <!-- NavBar -->
+        <nav class="navbar">
+            <div class="title">
+                <h4>Curry</h4>
+            </div>
+            <ul class="navlink">
+                <li><a class="btn" href="#header">Home</a></li>
+                <li><a class="btn" href="#about">About</a></li>
+                <li><a class="btn" href="#skills">Skills</a></li>
+                <li><a class="btn" href="#testimonials">Testimonials</a></li>
+                <li><a class="btn" href="#projects">Projects</a></li>
+            </ul>
+            <div class="menu">
+                <div class="menu__line-1"></div>
+                <div class="menu__line-2"></div>
+                <div class="menu__line-3"></div>
+            </div>
+        </nav>
+
+
+
+        <!-- Header Section -->
+        <header class="header" id="header">
             
-            <img src="img/logo.png" alt="" alt"Logo" class="header__logo">
+            <img src="img/logo.png" alt="" alt="Logo" class="header__logo">
             <h1 class="heading-1">Curry</h3>
-            <h3 class="heading-3">Design and Development</h1>
-            <button class="btn header__btn">View my work</button>
+            <h3 class="heading-3">Software Development</h1>
+            <a href="#projects" class="btn header__btn">View my work</a>
             <div class="header__tech-text">Beautiful web pages on every device</div>
             <div class="header__tech-logos">
                     <svg class="header__icon">
@@ -39,139 +83,159 @@
             </div>
         </header>
 
-        <div class="social">
-            <h3 class="heading-3">Connect with me</h3>
-            <div class="social__list">
-                <a href="https://www.linkedin.com/in/willhcurry/" title="">
-                    <svg class="social__icon">
-                        <use xlink:href="img/sprite.svg#icon-linkedin"></use>
-                    </svg>
-                </a>
-                <h4 class="heading-4 heading-4--light">LinkedIn</h4>
+        <!-- Social Section -->
 
-                <a href="https://github.com/willhcurry" title="">
+            <div class="social">
+                <!--<h3 class="heading-4">Connect with me</h3>-->
+                <div class="social__list">
+                    <a href="https://www.linkedin.com/in/willhcurry/" target="_blank">
                         <svg class="social__icon">
-                            <use xlink:href="img/sprite.svg#icon-github"></use>
+                            <use xlink:href="img/sprite.svg#icon-linkedin"></use>
                         </svg>
-                </a>
-                <h4 class="heading-4 heading-4--light">Github</h4>
+                    </a>
+                    <a href="https://www.linkedin.com/in/willhcurry/" target="_blank"><h4 class="heading-4 heading-4--light">LinkedIn</h4></a>
 
-                <a href="https://twitter.com/WillHCurry" title="">
-                    <svg class="social__icon">
-                        <use xlink:href="img/sprite.svg#icon-twitter"></use>
-                    </svg>
-                </a>
-                <h4 class="heading-4 heading-4--light">Twitter</h4>
-            </div>
-        </div>
+                    <a href="https://github.com/willhcurry" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="img/sprite.svg#icon-github"></use>
+                            </svg>
+                    </a>
+                    <a href="https://github.com/willhcurry" target="_blank"><h4 class="heading-4 heading-4--light">Github</h4></a>
 
-        <div class="about">
-            Hello! I'm a full stack web developer Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-        </div>
-
-        <div class="skills">
-
-            <div class="skill">
-                <svg class="skill__icon">
-                    <use xlink:href="img/sprite.svg#icon-html5"></use>
-                </svg>
-                <h4 class="heading-4 heading-4--dark">HTML</h4>
-                <p class="skill__text">I love HTML5! Did you know I created that video simply with one line of code?</p>
-            </div>
-            
-            <div class="skill">
-                <svg class="skill__icon">
-                    <use xlink:href="img/sprite.svg#icon-css3"></use>
-                </svg>
-                <h4 class="heading-4 heading-4--dark">CSS</h4>
-                <p class="skill__text">I love HTML5! Did you know I created that video simply with one line of code?</p>
-            </div>
-
-            <div class="skill">
-                <svg class="skill__icon">
-                    <use xlink:href="img/sprite.svg#icon-javascript"></use>
-                </svg>
-                <h4 class="heading-4 heading-4--dark">JavaScript</h4>
-                <p class="skill__text">I love HTML5! Did you know I created that video simply with one line of code?</p>
-            </div>
-
-            <div class="skill">
-                <svg class="skill__icon">
-                    <use xlink:href="img/sprite.svg#icon-react"></use>
-                </svg>
-                <h4 class="heading-4 heading-4--dark">React</h4>
-                <p class="skill__text">I love HTML5! Did you know I created that video simply with one line of code?</p>
-            </div>
-
-            <div class="skill">
-                <svg class="skill__icon">
-                    <use xlink:href="img/sprite.svg#icon-sass"></use>
-                </svg>
-                <h4 class="heading-4 heading-4--dark">Sass</h4>
-                <p class="skill__text">I love HTML5! Did you know I created that video simply with one line of code?</p>
-            </div>
-
-            <div class="skill">
-                <svg class="skill__icon">
-                    <use xlink:href="img/sprite.svg#icon-redis"></use>
-                </svg>
-                <h4 class="heading-4 heading-4--dark">Redis</h4>
-                <p class="skill__text">I love HTML5! Did you know I created that video simply with one line of code?</p>
+                    <a href="https://twitter.com/WillHCurry" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com/WillHCurry" target="_blank"><h4 class="heading-4 heading-4--light">Twitter</h4></a>
+                </div>
             </div>
 
         </div>
 
-        <div class="story__content">
-            <h3 class="heading-3 mb-sm">Happy Customers</h3>
-            <h2 class="heading-2 heading-2--white mb-md">&ldquo;One of the best decisions for my company.&rdquo;</h2>
-            <p class="story__text">
-                I didn't know much about websites or how my web presence could affect business. William was great in not only in designing a new log and site, but explaining to me how it all worked. 
-            </p>
-            <button class="btn">Contact William</button>
+        <!-- Summary Section -->
+        <div class="about__summary" id="about">
+            <p>Hello and welcome to my page coded from scratch! My name is William, a software developer native to the beautiful Silicone Slopes in Utah. I'm looking to be part of a development that would enjoy benefiting from my continuous improvement. Take a look at some of my tweets! </p>
         </div>
 
-        <div class="story__pictures">
-            Story Pictures
-        </div>
 
+        <!-- About Section -->
+        <div class="about__twitter">
+            <a class="twitter-timeline" data-height="500" data-link-color="#1DE9B6" href="https://twitter.com/WillHCurry?ref_src=twsrc%5Etfw">Tweets by WillHCurry</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
         
+        <!-- Skills Section -->
+            <section class="skills" id="skills">
+                    
+                <div class="skill">
+                    <svg class="skill__icon">
+                        <use xlink:href="img/sprite.svg#icon-javascript"></use>
+                    </svg>
+                    <h4 class="heading-4 heading-4--dark">JavaScript</h4>
+                    <p class="skill__text">JavaScript can be quirky. Without understanding the in and outs of complicated topics like scope and hoisting, your app can take a turn for the worst quickly.</p>
+                </div>
+                
+                <div class="skill">
+                    <svg class="skill__icon">
+                        <use xlink:href="img/sprite.svg#icon-sass"></use>
+                    </svg>
+                    <h4 class="heading-4 heading-4--dark">CSS</h4>
+                    <p class="skill__text">My favorite CSS technologies are easily SASS and CSS Grid. While technologies like Bootstrap has their places, you don't fully control your front end.</p>
+                </div>
 
-        <section class="apps">
-            <div class="app">
-                <a href="#" title="RTVS"><img src="/img/app-rtvs.png" alt="RTVS" class="app__img"></a>
-                <h5 class="app__name">RTV Solution</h5>
-                <btn class="btn app__btn">Github</btn>
+                <div class="skill">
+                    <svg class="skill__icon">
+                        <use xlink:href="img/sprite.svg#icon-database"></use>
+                    </svg>
+                    <h4 class="heading-4 heading-4--dark">Databases</h4>
+                    <p class="skill__text">Although my specialization lies in the front end, I have experience deploying full stack apps using SQL and noSQL technologies like PostGres and MongoDB.</p>
+                </div>
+
+                <div class="skill">
+                    <svg class="skill__icon">
+                        <use xlink:href="img/sprite.svg#icon-react"></use>
+                    </svg>
+                    <h4 class="heading-4 heading-4--dark">React</h4>
+                    <p class="skill__text">This is where I have the most fun! Implementing the power of ReactJs, apps are faster, deliver a better user experience, and take unnecessary load off of the server.</p>
+                </div>
+
+                <div class="skill">
+                    <svg class="skill__icon">
+                        <use xlink:href="img/sprite.svg#icon-git"></use>
+                    </svg>
+                    <h4 class="heading-4 heading-4--dark">Version Control</h4>
+                    <p class="skill__text">To contribute to a project as a part of a team it's important to understand Git and how it's used to keep progress smooth and to prevent nightmares.</p>
+                </div>
+
+                <div class="skill">
+                    <svg class="skill__icon">
+                        <use xlink:href="img/sprite.svg#icon-stackoverflow"></use>
+                    </svg>
+                    <h4 class="heading-4 heading-4--dark">Big O</h4>
+                    <p class="skill__text">I'm constantly practicing the use of data structures and algorithms. Code should be written keeping in mind the 3 pillars of good code: readability, space, and time complexity.</p>
+                </div>
+
+        </section>
+
+        <!-- Testimonials Section -->
+
+            <div class="story__content" id="testimonials">
+                <h3 class="heading-3 mb-sm">Testimonial</h3>
+                <h2 class="heading-2 heading-2--white mb-md">&ldquo;One of the best decisions for my company.&rdquo;</h2>
+                <p class="story__text">
+                    "I was very unsatisfied with how my company's website looked. William improved the look of my company's website beautifully compared to what I had before." <br> -Eduardo Perez, CEO of RTV Solutions  
+                </p>
+                <a href="http://www.rtvsolution.com" target="_blank" class="btn">View RTV Solutions</a>
             </div>
 
+            <div class="story__pictures">
+                <img src="img/story-1.jpg" alt="Website" class="story__img--1">
+                <img src="img/CEO.jpg" alt="Website" class="story__img--2">
+            </div>
+
+        <!-- Apps Section -->
+
+        <section class="apps" id="projects">
+
             <div class="app">
-                <a href="https://whc-smart-brain.herokuapp.com/" title="Smart Brain"><img src="/img/app-smartbrain.png" alt="Smart Brain" class="app__img"></a>
+                <a href="https://whc-smart-brain.herokuapp.com/" target="_blank" title="Smart Brain"><img src="/img/smartbrainmobile.png" alt="Smart Brain" class="app__img"></a>
                 <h5 class="app__name">Smart Brain</h5>
                 <a href="https://github.com/willhcurry/smartbrain" class="btn app__btn app__a">Github</a>
             </div>
 
             <div class="app">
-                <a href="#" title="Super Mutants"><img src="/img/app-mutants.png" alt="Smart Brain" class="app__img"></a>
+                <a href="https://willhcurry.github.io/super-mutants/" target="_blank" title="Super Mutants"><img src="/img/supermutantsmobile.png" alt="Smart Brain" class="app__img"></a>
                 <h5 class="app__name">Super Mutants</h5>
                 <a href="https://github.com/willhcurry/super-mutants" class="btn app__btn app__a">Github</a>
             </div>
 
             <div class="app">
-                <a href="#" title="Smart Brain"><img src="/img/app-smartbrain.png" alt="Smart Brain" class="app__img"></a>
-                <h5 class="app__name">Smart Brain</h5>
-                <btn class="btn app__btn">Github</btn>
+                <a href="http://www.rtvsolution.com" target="_blank" title="RTVS"><img src="/img/rtvsmobile.png" alt="RTVS" class="app__img"></a>
+                <h5 class="app__name">RTV Solution</h5>
+                <button class="btn app__btn">Github</button>
+            </div>
+
+            <!-- 
+                
+                <div class="app">
+                <a href="https://www.rtvsolution.com/" target="_blank" title="Super Mutants"><img src="/img/rtvsmobile.png" alt="Smart Brain" class="app__img"></a>
+                <h5 class="app__name">RTV Solution</h5>
+                <a href="https://github.com/willhcurry/super-mutants" target="_blank" class="btn app__btn app__a">Github</a>
             </div>
 
             <div class="app">
-                <a href="#" title="Smart Brain"><img src="/img/app-smartbrain.png" alt="Smart Brain" class="app__img"></a>
-                <h5 class="app__name">Smart Brain</h5>
-                <btn class="btn app__btn">Github</btn>
+                <a href="https://willhcurry.github.io/super-mutants/" target="_blank" title="Super Mutants"><img src="/img/app-mutants.png" alt="Smart Brain" class="app__img"></a>
+                <h5 class="app__name">Super Mutants</h5>
+                <a href="https://github.com/willhcurry/super-mutants" target="_blank" class="btn app__btn app__a">Github</a>
             </div>
 
             <div class="app">
-                <a href="#" title="Smart Brain"><img src="/img/app-smartbrain.png" alt="Smart Brain" class="app__img"></a>
-                <h5 class="app__name">Smart Brain</h5>
-                <btn class="btn app__btn">Github</btn>
+                <a href="https://willhcurry.github.io/super-mutants/" target="_blank" title="Super Mutants"><img src="/img/app-mutants.png" alt="Smart Brain" class="app__img"></a>
+                <h5 class="app__name">Super Mutants</h5>
+                <a href="https://github.com/willhcurry/super-mutants" target="_blank" class="btn app__btn app__a">Github</a>
             </div>
+
+            -->
 
 
 
@@ -179,20 +243,39 @@
             
         </section>
 
-        <section class="gallery">
-            Gallery
+        <!-- Subscribe Section -->
+
+        <section class="email" id="subscribe">
+            <!-- Begin MailChimp Signup Form -->
+            <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+                
+            <div class="">
+                <form action="https://linkedin.us19.list-manage.com/subscribe/post?u=5bd06884c0a28d78d94d2eb0c&amp;id=47f9c94980" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5bd06884c0a28d78d94d2eb0c_47f9c94980" tabindex="-1" value=""></div>
+                    <div class="clear">
+                        <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-subscribe">Subscribe!</div>
+                    </div>
+                </form>
+            </div>
+
         </section>
+
+        <!-- Footer Section -->
 
         <footer class="footer">
             <ul class="nav">
-                <li class="nav__item"><a href="#" class="nav__link">LinkedIn</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Twitter</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">YouTube</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">SnapChat</a></li>
+                <li class="nav__item"><a href="https://www.linkedin.com/in/willhcurry/" target="_blank" class="nav__link">LinkedIn</a></li>
+                <li class="nav__item"><a href="https://twitter.com/WillHCurry" target="_blank" class="nav__link">Twitter</a></li>
+                <!--<li class="nav__item"><a href="#" class="nav__link">Medium</a></li>-->
+                <li class="nav__item"><a href="https://github.com/willhcurry" target="_blank" class="nav__link">GitHub</a></li>
             </ul>
             <p class="copyright">
-                &copy; Copyright 2018 Curry. All Rights Reserved.
+                &copy; Copyright 2019 Curry. All Rights Reserved.
             </p>
         </footer>
+
+        <script src="scripts/script.js"></script>
     </body>
 </html>

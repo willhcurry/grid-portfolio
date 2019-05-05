@@ -5,7 +5,8 @@
 .heading-1 {
     @extend %heading;
     font-family: $font-display;
-    font-size: 4.5rem;
+    font-size: 6.5rem;
+    font-weight: 600;
     color: $color-grey-light-1;
     line-height: 1;
     justify-self: center;
@@ -24,7 +25,7 @@
 
 .heading-3 {
     @extend %heading;
-    font-size: 1.6rem;
+    font-size: 3.6rem;
     color: $color-primary;
     justify-self: center;
 
@@ -48,6 +49,10 @@
     padding: 1.8rem 3rem;
     cursor: pointer;
     transition: all .2s;
+
+    &-subscribe {
+        margin: 20px;
+    }
 
     &:hover {
         background-color: $color-primary-dark;

@@ -21,6 +21,7 @@
         grid-column: 1 / -1;
         transform: translate(50%);
         transition: all .2s;
+        z-index: 29;
     }
 
     &__img:hover {

@@ -1,5 +1,5 @@
 .social {
-    background-color: $color-secondary;
+    background-color: $color-grey-dark-2;
     grid-column: col-start 8 / full-end;
     padding: 3rem;
 
@@ -9,16 +9,28 @@
     justify-items: center;
     grid-row-gap: 2rem;
 
+    @media only screen and (max-width: $bp-medium) {
+        grid-column: 1 / -1;
+    }
+
     &__list {
         display: grid;
         grid-template-columns: min-content max-content;
         grid-column-gap: 2rem;
         grid-row-gap: 1vh;
         align-items: center;
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-template-columns: repeat(3, min-content max-content);
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            grid-template-columns: min-content max-content;
+        }
     }
 
     &__icon {
-        fill: $color-grey-light-2;
+        fill: $color-white;
         width: 3rem;
     }
 }
