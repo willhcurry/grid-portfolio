@@ -75,13 +75,14 @@
         position: absolute;;
         right: 0px;
         height: 92vh;
-        top: 8vh;
+        top: 6vh;
         background-color: $color-primary;
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 50%;
         transform: translateX(100%);
+        visibility: none;
         transition: transform .5s ease-in;
     }
 
@@ -99,6 +100,7 @@
 
 .nav-active {
     transform: translateX(0%);
+    visibility: visible;
 }
 
 @keyframes navLinkFade {

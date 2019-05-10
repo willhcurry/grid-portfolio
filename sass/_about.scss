@@ -11,13 +11,17 @@
         @media only screen and (max-width: $bp-medium) {
             grid-column: 1 / -1;
         }
+
+        a:link {
+            color: $color-primary;
+        }
     }
 
     &__twitter {
         background-color: $color-grey-light-2;
         grid-column: col-start 5 / full-end;
 
-        padding: 2rem;
+        padding: 4rem;
 
         @media only screen and (max-width: $bp-medium) {
             grid-column: 1 / -1;

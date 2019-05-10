@@ -7,7 +7,7 @@
     align-content: center;
     justify-content: center;
     justify-items: center;
-    grid-row-gap: 2rem;
+    grid-row-gap: 0rem;
 
     @media only screen and (max-width: $bp-medium) {
         grid-column: 1 / -1;
@@ -17,7 +17,7 @@
         display: grid;
         grid-template-columns: min-content max-content;
         grid-column-gap: 2rem;
-        grid-row-gap: 1vh;
+        grid-row-gap: 0vh;
         align-items: center;
 
         @media only screen and (max-width: $bp-medium) {
@@ -31,6 +31,6 @@
 
     &__icon {
         fill: $color-white;
-        width: 3rem;
+        width: 5rem;
     }
 }
